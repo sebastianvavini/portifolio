@@ -7,14 +7,28 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
 
-        android:id="@+id/text_user_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="16dp"
-        android:text="Faça Login" />
+            android:id="@+id/text_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="16dp"
+            android:text="Faça Login" />
+        <TextView
+
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="16dp"
+            android:text="22 de Junho de 2022" />
+
+
+    </LinearLayout>
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -27,21 +41,26 @@
             android:padding="20dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
 
                     android:id="@+id/text_patrimonio_liquido"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:text="Patrimonio Liquido" />
+                    android:text="Liquido" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="$ 50000.667,00"
+                    android:gravity="center"
+                   />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plano"
                     android:gravity="center"/>
                 <TextView
                     android:layout_width="match_parent"
@@ -51,72 +70,97 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
 
                     android:id="@+id/text_patrimonio_acumulado"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:padding="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
                     android:text="Acumulado" />
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="50.000.000,00"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="500.667,00"
-                    android:gravity="left"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
 
-                    android:id="@+id/text_pontos_de_creditos"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:text="Pontos" />
+                    android:text="50.000.000,00"/>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="473.500"
+                    android:text="Plano"
                     android:gravity="center"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="500.667,00"
-                    android:gravity="left"/>
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+
+                    android:id="@+id/text_pontos_de_creditos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Pontos" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="473.500"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plano"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="500.667,00"
+                     android:gravity="center"/>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
 
                     android:id="@+id/text_total_milhas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:padding="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
                     android:text="Milhas" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="700.000"/>
+                    android:gravity="center"
+                    android:text="1.700.000.00"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plano"
+                    android:gravity="center"/>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="500.667,00"
-                    android:gravity="left"/>
+                    android:gravity="center"/>
             </LinearLayout>
 
 
@@ -159,7 +203,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:padding="16dp"
+
                     android:text="Nome" />
 
                 <EditText
@@ -184,7 +228,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:padding="16dp"
+
                     android:text="Acumulado" />
 
                 <EditText
@@ -209,7 +253,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="16dp"
+
                     android:text="Líquido" />
 
                 <EditText
@@ -235,7 +279,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_liquido"
-                    android:padding="16dp"
                     android:text="Preço de compra" />
 
                 <EditText
@@ -257,7 +300,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_preco_de_compra"
-                    android:padding="16dp"
                     android:text="Preço de venda" />
 
                 <EditText
@@ -281,14 +323,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_preco_de_venda"
-                    android:padding="16dp"
                     android:text="Lucro" />
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-
                     android:enabled="false"
                     android:inputType="numberDecimal" />
 
@@ -305,7 +345,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_lucro"
-                    android:padding="16dp"
                     android:text="Pontos" />
 
                 <EditText
@@ -313,6 +352,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Pontos"
+                    android:gravity="center"
                     android:inputType="numberDecimal" />
 
             </LinearLayout>
@@ -328,13 +368,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_pontos"
-                    android:padding="16dp"
+
                     android:text="Milhas" />
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:hint="Milhas"
                     android:inputType="numberDecimal" />
 
@@ -352,7 +393,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_milhas"
-                    android:padding="16dp"
+
                     android:text="Horas de Trabalho" />
 
                 <EditText
@@ -374,7 +415,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_horas_de_trabalho"
-                    android:padding="16dp"
+
                     android:text="Trajeto Em Kms" />
 
                 <EditText
@@ -396,13 +437,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_trajeto_kms"
-                    android:padding="16dp"
+
                     android:text="Km por litro" />
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:hint="KMs por litro"
                     android:inputType="numberDecimal" />
             </LinearLayout>
@@ -418,13 +460,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_km_for_liter"
-                    android:padding="16dp"
+
                     android:text="Litros Comprados" />
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Litros comprados"
+                    android:hint="0000"
                     android:inputType="numberDecimal" />
 
             </LinearLayout>
@@ -439,13 +481,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_km_for_liter"
-                    android:padding="16dp"
+
                     android:text="Preço por Litro" />
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Preço por litro"
+                    android:hint="0.00"
                     android:inputType="numberDecimal" />
 
             </LinearLayout>
