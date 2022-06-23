@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:padding="16dp"
-            android:text="Faça Login"
+            android:text="Faça Login."
             android:textColor="@color/white"/>
         <TextView
 
