@@ -174,32 +174,24 @@
 
     </HorizontalScrollView>
 
-    <View
-        android:layout_width="350dp"
-        android:layout_height="2dp"
-        android:layout_gravity="center"
-        android:background="@color/black" />
-<<<<<<< HEAD
+
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Como eu Invisto Meu Tempo?"
+        android:text="ONDE INVISTO A MINHA ATENÇÃO ?"
         android:gravity="center"/>
     <View
         android:layout_width="350dp"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:layout_gravity="center"
         android:background="@color/black" />
-=======
-    <ImageView
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_down_24"/>
-        android:src="@drawable/ic_down_24"/>
 
->>>>>>> 75ba20a5e1d921122f6db4ca0d6aa7ca6884efe3
+
+
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="350dp"
@@ -222,7 +214,7 @@
 
                 <TextView
 
-                    android:id="@+id/text_nome"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -230,6 +222,7 @@
                     android:text="Nome" />
 
                 <EditText
+                    android:id="@+id/edit_text_nome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -246,7 +239,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/text_acumulado"
+
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -256,6 +249,7 @@
 
                 <EditText
 
+                    android:id="@+id/edit_text_acumulado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -263,12 +257,7 @@
                     android:enabled="false"
                     android:inputType="numberDecimal" />
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:enabled="false"
-                    android:inputType="numberDecimal" />
+
 
             </LinearLayout>
 
@@ -279,7 +268,7 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
-                    android:id="@+id/text_liquido"
+
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -287,6 +276,7 @@
                     android:text="Líquido" />
 
                 <EditText
+                    android:id="@+id/edit_text_liquido"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -305,13 +295,14 @@
 
                 <TextView
 
-                    android:id="@+id/text_preco_de_compra"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_liquido"
                     android:text="Preço de compra" />
 
                 <EditText
+                    android:id="@+id/edit_text_preco_de_compra"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Preço de Compra"
@@ -326,13 +317,14 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
-                    android:id="@+id/text_preco_de_venda"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_preco_de_compra"
                     android:text="Preço de venda" />
 
                 <EditText
+                    android:id="@+id/edit_text_preco_de_venda"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -349,11 +341,19 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
-                    android:id="@+id/text_lucro"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_preco_de_venda"
                     android:text="Lucro" />
+                <EditText
+                    android:id="@+id/edit_text_lucro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="lucro"
+                    android:gravity="center"
+                    android:inputType="numberDecimal" />
 
             </LinearLayout>
 
@@ -364,13 +364,14 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
-                    android:id="@+id/text_pontos"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_lucro"
                     android:text="Pontos" />
 
                 <EditText
+                    android:id="@+id/edit_text_pontos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -387,7 +388,7 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
-                    android:id="@+id/text_milhas"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_pontos"
@@ -395,6 +396,7 @@
                     android:text="Milhas" />
 
                 <EditText
+                    android:id="@+id/edit_text_milhas"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -412,14 +414,15 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
-                    android:id="@+id/text_dias_de_trabalho"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_milhas"
 
-                    android:text="Horas de Trabalho" />
+                    android:text="Dias de Trabalho" />
 
                 <EditText
+                    android:id="@+id/edit_text_dias_de_trabalho"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -434,7 +437,7 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
-                    android:id="@+id/text_horas_de_trabalho"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_milhas"
@@ -442,10 +445,33 @@
                     android:text="Horas de Trabalho" />
 
                 <EditText
+                    android:id="@+id/edit_text_horas_de_trabalho"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Horas de Trabalho"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_milhas"
+
+                    android:text="Preço da Hora " />
+
+                <EditText
+                    android:id="@+id/edit_text_preco_hora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="preço da hora"
                     android:inputType="numberDecimal" />
             </LinearLayout>
 
@@ -456,7 +482,7 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
-                    android:id="@+id/text_trajeto_kms"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_horas_de_trabalho"
@@ -464,9 +490,12 @@
                     android:text="Trajeto Em Kms" />
 
                 <EditText
+                    android:id="@+id/edit_text_trajeto_kms"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Trajeto em KMs"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:inputType="numberDecimal" />
 
             </LinearLayout>
@@ -478,7 +507,7 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
-                    android:id="@+id/text_km_for_liter"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_trajeto_kms"
@@ -486,6 +515,7 @@
                     android:text="Km por litro" />
 
                 <EditText
+                    android:id="@+id/edit_text_km_for_liter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -501,7 +531,7 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
-                    android:id="@+id/text_litros_comprados"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_km_for_liter"
@@ -509,9 +539,12 @@
                     android:text="Litros Comprados" />
 
                 <EditText
+                    android:id="@+id/edit_text_litros_comprados"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="0000"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:inputType="numberDecimal" />
 
             </LinearLayout>
@@ -522,7 +555,31 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
-                    android:id="@+id/text_preco_por_litro"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_km_for_liter"
+
+                    android:text="QTD de unidades: " />
+
+                <EditText
+                    android:id="@+id/edit_text_qtd_unidades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="0000"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/text_km_for_liter"
@@ -530,9 +587,12 @@
                     android:text="Preço por Litro" />
 
                 <EditText
+                    android:id="@+id/edit_text_preco_por_litro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="0.00"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:inputType="numberDecimal" />
 
             </LinearLayout>
@@ -554,6 +614,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Upload de Audio"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:inputType="numberDecimal" />
 
             </LinearLayout>
@@ -586,15 +648,10 @@
 
     </ScrollView>
 
-    <ImageView
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_up_24"/>
 
     <View
         android:layout_width="350dp"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:layout_gravity="center"
         android:background="@color/black" />
 
@@ -622,6 +679,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_new_24"
+            android:layout_marginLeft="12dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_long_24"
             android:layout_marginLeft="12dp"/>
     </LinearLayout>
 
