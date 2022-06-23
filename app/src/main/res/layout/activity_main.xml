@@ -9,7 +9,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/black">
         <TextView
 
             android:id="@+id/text_user_name"
@@ -17,7 +18,8 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:padding="16dp"
-            android:text="Faça Login" />
+            android:text="Faça Login"
+            android:textColor="@color/white"/>
         <TextView
 
             android:id="@+id/text_date"
@@ -25,7 +27,8 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:padding="16dp"
-            android:text="22 de Junho de 2022" />
+            android:text="22 de Junho de 2022"
+            android:textColor="@color/white"/>
 
 
     </LinearLayout>
@@ -176,12 +179,18 @@
         android:layout_height="2dp"
         android:layout_gravity="center"
         android:background="@color/black" />
-
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_down_24"/>
+        android:src="@drawable/ic_down_24"/>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginTop="8dp">
+        android:layout_height="350dp"
+        android:layout_marginTop="8dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -389,6 +398,28 @@
                 android:layout_marginRight="30dp">
 
                 <TextView
+                    android:id="@+id/text_dias_de_trabalho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_milhas"
+
+                    android:text="Horas de Trabalho" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Dias Trabalhados"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
                     android:id="@+id/text_horas_de_trabalho"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -498,6 +529,12 @@
 
     </ScrollView>
 
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_up_24"/>
+
     <View
         android:layout_width="350dp"
         android:layout_height="2dp"
@@ -517,7 +554,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="18dp"
+            android:padding="16dp"
             android:src="@drawable/ic_baseline_save_24" />
 
         <ImageView
