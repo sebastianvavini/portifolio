@@ -47,8 +47,8 @@ class MainActivity : AppCompatActivity() {
         trajetoEmKMs=binding.editTextTrajetoKms
         kmPorLitro=binding.editTextKmForLiter
         qtdLitros=binding.editTextLitrosComprados
-        precoPorLitro
-        qtdUnidades
+        precoPorLitro=binding.editTextPrecoPorLitro
+        qtdUnidades=binding.editTextQtdUnidades
 
 
     }
@@ -56,10 +56,14 @@ class MainActivity : AppCompatActivity() {
     private fun salvar() {
 
         var invest = Investimento()
-        /**
-         *  investimentos = listOf<Investimento>(
-        Investimento(),Investimento(),Investimento()
-        )
-         **/
+        invest.setNome(nome.toString())
+        invest.setAcumulado(acumulado.toString().toDouble())
+        invest.setLiquido(liquido.toString().toDouble())
+        invest.setPrecoDeCompra(precoCompra.toString().toDouble())
+        invest.setPrecoDeVenda(precoVenda.toString().toDouble())
+        invest.setLucro(lucro.toString().toDouble())
+        invest.setPontos(pontos.toString().toDouble())
+        invest.setMilhas(milhas.toString().toDouble())
+        invest.setHorasDeTrabalho(horasDeTrabalho.toString().toDouble())
     }
 }
